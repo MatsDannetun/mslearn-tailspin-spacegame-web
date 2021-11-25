@@ -4,6 +4,6 @@ steps:
   - task: AzureResourceGroupDeployment@2
     inputs:
       azureSubscription: "MySPNConnection"
-      #action: 'Create Or Update Resource Group' # Options: create Or Update Resource Group, select Resource Group, start, stop, stopWithDeallocate, restart, delete, deleteRG
+      action: "Create"
       resourceGroupName: "rg-matsd-t02"
       location: "westeurope"
