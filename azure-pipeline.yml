@@ -3,7 +3,7 @@ steps:
     condition: always()
   - task: AzureResourceGroupDeployment@2
     inputs:
-      azureSubscription: MySPNConnetion
+      azureSubscription: "c0f03d6f-f572-4a3b-a2db-4364a028567b"
       #action: 'Create Or Update Resource Group' # Options: create Or Update Resource Group, select Resource Group, start, stop, stopWithDeallocate, restart, delete, deleteRG
-      resourceGroupName: rg-matsd-t02
-      location: westeurope
+      resourceGroupName: "rg-matsd-t02"
+      location: "westeurope"
