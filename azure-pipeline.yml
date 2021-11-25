@@ -4,6 +4,6 @@ steps:
   - task: AzureResourceGroupDeployment@2
     inputs:
       azureSubscription: "MySPNConnection"
-      action: "Create"
+      action:  "Create Or Update Resource Group"
       resourceGroupName: "rg-matsd-t02"
       location: "westeurope"
